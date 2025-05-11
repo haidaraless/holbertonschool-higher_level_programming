@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-for i in range(99):
-    print(f"{i} = 0x{i:x}")
+print('\n'.join(["{} = 0x{}".format(i, format(i, 'x')) for i in range(99)]))
