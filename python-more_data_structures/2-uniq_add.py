@@ -1,6 +1,3 @@
 #!/usr/bin/python3
-from functools import reduce
-
-
 def uniq_add(my_list=[]):
-    return reduce(lambda a, b: a+b, set(my_list))
+    return sum(map(lambda x: x, set(map(lambda i: i, my_list))))
