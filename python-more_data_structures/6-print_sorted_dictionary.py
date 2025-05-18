@@ -2,4 +2,4 @@
 def print_sorted_dictionary(a_dictionary):
     new_dic = dict(sorted(a_dictionary.items()))
     for k, v in new_dic.items():
-        print(k, v)
+        print(f"{k}: {v}")
