@@ -1,3 +1,5 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
-    return dict(sorted(a_dictionary.items()))
+    new_dic = dict(sorted(a_dictionary.items()))
+    for k, v in new_dic.items():
+        print(k, v)
