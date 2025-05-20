@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""an empty class that represents Square"""
+
+
 class Square:
-    def __init__(self):
-        pass
+    """an empty body of the class"""
+    pass
