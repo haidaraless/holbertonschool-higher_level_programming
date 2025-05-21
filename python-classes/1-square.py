@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""declare a class attribute (variable) to return size"""
+"""declare a private class attribute (variable) to return size"""
 
 
 class Square:
+    """a class to represent Square"""
     __size = 0
 
     def __init__(self, size):
