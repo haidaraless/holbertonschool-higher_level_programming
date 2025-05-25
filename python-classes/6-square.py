@@ -30,7 +30,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
+
     @property
     def position(self):
         """a property to get position"""
@@ -39,16 +39,13 @@ class Square:
     @position.setter
     def position(self, value):
         """a property to set position"""
-        if not isinstance(value, tuple):
+        if not isinstance(value, tuple) or value[0] <= 0 or value[1] <= 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
     def my_print(self):
         """print a square using hash symbol"""
         if self.size == 0:
-            print()
-        
-        if self.position[1] > 0:
             print()
 
         for c in range(self.size):
