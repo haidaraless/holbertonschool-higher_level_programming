@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""an empty class that represents Rectangle"""
+"""A class that represents Rectangle"""
 
 
 class Rectangle:
-    """an empty body of the class"""
-    __width = 0
-    __height = 0
+    """Defines rectangle with width and height"""
 
     def __init__(self, width=0, height=0):
         """an initilizer of Rectangle object"""
@@ -27,17 +25,15 @@ class Rectangle:
         """a setter of width attribute"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
-        else:
-            self.__width = value
+        self.__width = value
 
     @height.setter
     def height(self, value):
         """a setter of height attribute"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
-        else:
-            self.__height = value
+        self.__height = value
