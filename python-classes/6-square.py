@@ -4,8 +4,6 @@
 
 class Square:
     """a class to represent Square"""
-    __size = 0
-    __position = (0, 0)
 
     def __init__(self, size=0, position=(0, 0)):
         """an instance variable to accept the size with validating input"""
