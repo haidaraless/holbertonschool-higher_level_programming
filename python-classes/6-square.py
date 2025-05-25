@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""declare a private class attribute (variable) to return size"""
+"""Declare a class Square"""
 
 
 class Square:
@@ -8,8 +8,8 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """an instance variable to accept the size with validating input"""
 
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """a public method that calculates area of square"""
@@ -45,7 +45,7 @@ class Square:
     def my_print(self):
         """print a square using hash symbol"""
         if self.size == 0:
-            print()
+            print("")
 
         print("\n" * self.position[1], end="")
         for _ in range(self.size):
