@@ -1,3 +1,10 @@
+#!/usr/bin/python3
+
+"""
+a module that calculates two numbers
+"""
+
+
 def add_integer(a, b=98):
     """
     calculates two numbers and return the addition value
@@ -9,4 +16,7 @@ def add_integer(a, b=98):
     if not isinstance(b, int) and not isinstance(b, float):
         raise TypeError("b must be an integer")
 
-    return int(a + b)
+    a = int(a)
+    b = int(b)
+
+    return a + b
