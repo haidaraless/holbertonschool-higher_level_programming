@@ -8,7 +8,7 @@ Test the addition function
 Traceback (most recent call last):
   ...
 TypeError: add_integer() missing 1 required positional argument: 'a'
-add_integer(2)
+>>> add_integer(2)
 100
 >>> add_integer(2.5)
 100
