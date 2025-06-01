@@ -1,0 +1,22 @@
+Testing the inheritice of MyList from the original (built-in) list
+
+Import a list
+>>> MyList = __import__('1-my_list').MyList
+
+Declare an object of MyList class
+>>> ls = MyList()
+
+Append some data
+>>> ls.append(2)
+>>> ls.append(4)
+>>> ls.append(5)
+>>> ls.append(3)
+>>> ls.append(1)
+
+Printing the list
+>>> print(ls)
+[2, 4, 5, 3, 1]
+
+Printing the list after ascending sort
+>>> ls.print_sorted()
+[1, 2, 3, 4, 5]
