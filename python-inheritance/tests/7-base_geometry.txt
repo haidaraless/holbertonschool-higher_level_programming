@@ -1,6 +1,7 @@
-Testing BaseGeometry class
+Testing BaseGeometry module
+
+Importing BaseGeometry class
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
->>> bg = BaseGeometry()
 
 Testing getting the area
 >>> bg = BaseGeometry()
@@ -8,6 +9,20 @@ Testing getting the area
 Traceback (most recent call last):
 ...
 Exception: area() is not implemented
+
+Testing one argument to area method
+>>> bg = BaseGeometry()
+>>> bg.area(5)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 2 were given
+
+Testing two arguments to area method
+>>> bg = BaseGeometry()
+>>> bg.area(5, 5)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 3 were given
 
 Testing value as string
 >>> bg = BaseGeometry()
@@ -58,20 +73,6 @@ Traceback (most recent call last):
 ...
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
-
-Testing one argument to area method
->>> bg = BaseGeometry()
->>> bg.area(5)
-Traceback (most recent call last):
-...
-TypeError: area() takes 1 positional argument but 2 were given
-
-Testing two arguments to area method
->>> bg = BaseGeometry()
->>> bg.area(5, 5)
-Traceback (most recent call last):
-...
-TypeError: area() takes 1 positional argument but 3 were given
 
 Testing tuple to method
 >>> bg = BaseGeometry()
