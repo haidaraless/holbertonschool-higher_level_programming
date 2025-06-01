@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-Checks if an object is inherits from a given class
+Checks if an object's class is inherits from a given class directly or indirectly
 """
 
 
 def inherits_from(obj, a_class):
     """
-    Return True if obj is inherits from a_class
-    otherwise returns False
+    Return True if object's class is inherits from a_class
+    directly or indirectly otherwise returns False 
     """
 
     return issubclass(type(obj), a_class)
