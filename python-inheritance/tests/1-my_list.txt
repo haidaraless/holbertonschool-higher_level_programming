@@ -20,3 +20,19 @@ Printing the list
 Printing the list after ascending sort
 >>> ls.print_sorted()
 [1, 2, 3, 4, 5]
+
+Printing an empty sorted list
+>>> ls.print_sorted()
+[]
+
+Printing a sorted list with negative values
+>>> lis = MyList()
+>>> lis.append(-1)
+>>> lis.append(-3)
+>>> lis.append(-6)
+>>> lis.append(-8)
+>>> lis.append(-9)
+>>> lis.append(-5)
+>>> lis.append(-4)
+>>> lis.print_sorted()
+[-9, -8, -6, -5, -4, -3, -1]
