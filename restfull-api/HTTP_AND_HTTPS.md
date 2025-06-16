@@ -52,8 +52,8 @@ Authorization: Bearer token123
 Content-Type: application/json
 
 {
-  "name": "John Doe",
-  "email": "john@example.com"
+  "name": "Haidar Alessa",
+  "email": "haidar@example.com"
 }
 ```
 
@@ -90,8 +90,8 @@ Cache-Control: no-cache
 
 {
   "id": 123,
-  "name": "John Doe",
-  "email": "john@example.com",
+  "name": "Haidar Alessa",
+  "email": "haidar@example.com",
   "status": "active"
 }
 ```
@@ -140,8 +140,8 @@ Host: example.com
 Content-Type: application/json
 
 {
-  "name": "Jane Smith",
-  "email": "jane@example.com"
+  "name": "Ali Alessa",
+  "email": "ali@example.com"
 }
 ```
 
@@ -160,8 +160,8 @@ Content-Type: application/json
 
 {
   "id": 123,
-  "name": "John Updated",
-  "email": "john.updated@example.com"
+  "name": "Haidar Updated",
+  "email": "haidar.updated@example.com"
 }
 ```
 
