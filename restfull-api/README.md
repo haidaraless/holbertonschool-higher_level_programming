@@ -1,1 +1,1 @@
-Learning about RESTfull API in Python
+Learning about RESTful API in Python
