@@ -114,7 +114,7 @@ Cache-Control: no-cache
    - The actual data requested by the client
    - Can be HTML, JSON, XML, images, etc.
 
-## HTTP Methods Explained
+## HTTP Methods
 
 HTTP methods define the type of action to be performed on a resource. Each method has specific semantics and use cases.
 
