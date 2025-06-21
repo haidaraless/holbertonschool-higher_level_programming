@@ -1,11 +1,3 @@
----
-
-title: "🚀 Mastering cURL: The Command-Line HTTP Power Tool"
-description: "A modern guide to using cURL effectively with examples and tips."
-date: 2025-06-21
-author: "ChatGPT"
------------------
-
 ## 💡 What is cURL?
 
 cURL (short for *Client URL*) is a command-line tool for transferring data with URLs. It supports a wide range of protocols including HTTP, HTTPS, FTP, and more. Whether you're testing APIs, downloading files, or sending data, cURL is a must-have tool in any developer's toolkit.
