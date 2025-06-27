@@ -1,2 +1,2 @@
--- List all fields of a given table
-SHOW COLUMNS FROM first_table;
+-- List all data (rows) of a given table
+SELECT * FROM first_table;
