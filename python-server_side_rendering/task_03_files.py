@@ -9,7 +9,7 @@ def read_json():
         with open('products.json', 'r') as f:
             return json.load(f)
     except Exception as e:
-        print(f"error reading JSON: {e}")
+        print(f"Error reading JSON: {e}")
         return []
 
 def read_csv():
@@ -25,7 +25,7 @@ def read_csv():
                     "price": float(row["price"])
                 })
     except Exception as e:
-        print(f"error reading CSV: {e}")
+        print(f"Error reading CSV: {e}")
     return products
 
 @app.route('/products')
@@ -40,7 +40,7 @@ def display_products():
     elif source == 'csv':
         products = read_csv()
     else:
-        error = "wrong source file"
+        error = "Wrong source"
         return render_template('product_display.html', error=error)
 
     if id_param:
@@ -48,9 +48,9 @@ def display_products():
             target_id = int(id_param)
             products = [p for p in products if p['id'] == target_id]
             if not products:
-                error = "product not found"
+                error = "Product not found"
         except ValueError:
-            error = "Invalid id format"
+            error = "Invalid ID format"
 
     return render_template('product_display.html', products=products, error=error)
 
