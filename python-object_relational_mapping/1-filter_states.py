@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Script to lists all states from the database hbtn_0e_0_usa
-Usage: ./0-select_states.py <username> <password> <database>
+Script to lists all states where name started with N
+from the database hbtn_0e_0_usa
 """
 
 import sys
@@ -22,7 +22,8 @@ if __name__ == "__main__":
     rows = cursor.fetchall()
 
     for row in rows:
-        print(row)
+        if row[1][0] == 'N':
+            print(row)
 
     cursor.close()
     db.close()
